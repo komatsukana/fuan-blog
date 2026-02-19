@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  web:
+    image: nginx:latest
+    container_name: fuan_nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./src:/var/www/html
+    depends_on:
+      - app
+
+  app:
+    build: ./docker/php
+    container_name: fuan_php
+    volumes:
+      - ./src:/var/www/html
+
+
