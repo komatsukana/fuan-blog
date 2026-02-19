@@ -1,0 +1,36 @@
+.site-header {
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 32px;
+    color: brown;
+  
+}
+
+.header-sub {
+    color: brown;
+    margin-bottom: 25px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 0;
+}
+
+.header-nav-item {
+    font-size: 20px;
+    color: brown;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
