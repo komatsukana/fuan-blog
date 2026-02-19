@@ -13,7 +13,11 @@ foreach ($files as $file) {
 <?php foreach ($blogs as $blog): ?>
 
   <article>
-    <h3><?= $blog["title"] ?></h3>
+    <h3>
+        <a href="/single.php?id=<?= $blog['id'] ?>">
+    <?= $blog["title"] ?>
+         </a>
+    </h3>
     <p><?= $blog["date"] ?></p>
     <p>❤️ <?= $blog["likes"] ?> ｜ 👀 <?= $blog["views"] ?></p>
   </article>

@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>不安ブログ</title>
+
+  <!-- ★ここにまとめる -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
 <header class="site-header">
 
   <h1 class="header-title">小松加奈の不安ブログ</h1>
@@ -17,5 +29,6 @@
   </ul>
 
 </header>
+
 
 
