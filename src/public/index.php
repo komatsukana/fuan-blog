@@ -1,3 +1,7 @@
+<?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -11,7 +15,24 @@
 
 <main>
   <h2>トップページ</h2>
-  <p>ここに本文が入るよ</p>
+<?php require_once __DIR__ . "/functions.php";
+$blogs = getBlogs();
+var_dump($blogs);
+foreach($blogs as $blog): ?>
+
+    <article>
+      <h3>
+        <a href="/single.php?id=<?= $blog['id'] ?>">
+          <?= $blog['title'] ?>
+        </a>
+      </h3>
+
+      <p><?= $blog["body"] ?></p>
+
+    </article>
+
+  <?php endforeach; ?>
+
 </main>
 
 <?php include __DIR__ . '/../views/footer.php'; ?>
